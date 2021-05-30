@@ -28,6 +28,12 @@ module.exports = {
       },
     },
 
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `@nipun-yesh`,
+      },
+    },
 
     {
       resolve: `gatsby-plugin-manifest`,

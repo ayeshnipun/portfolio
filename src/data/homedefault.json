@@ -68,7 +68,7 @@
     {
         "id": "skill",
         "title": "In a <span class='theme-color'>short time</span>, I have been able to achieve excellence in all areas of development.",
-        "description": "I provide cost-effective and high quality products to meet our Clients’ needs of timely delivery World Wide. I want to be local in a global world to be where our Customers need our services customers need our services."
+        "description": "I provide cost-effective and high quality products to meet Clients’ needs of timely delivery World Wide. I want to be local in a global world to be where the Customers need our services."
     },
     {
         "id": "portfolio",
@@ -96,10 +96,10 @@
     },
     {
         "id": "testimonial",
-        "title": "Steve Lehman",
+        "title": "Ash N",
         "subtitle": "Freelancer",
-        "description": "Really the Code, Support, and design are awesome and its good support they are giving. They give an instant solution to our needs. Really awesome. I will strongly recommend to my friends. Great template, even better service!",
-        "bgImage": "./images/banner/bg-image-03.jpg"
+        "description": "Of all the bidders, Ayesh was the only one who communicated efficiently to discuss requirements. I requested him to always clarify uncertainties and he always did this. In the end, the work he produced was to a high quality, met requirements, and was on budget and on time. Would highly recommend to others.",
+        "bgImage": "./images/banner/bg-image-06.jpg"
     },
     {
         "id": "brand",
