@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import CircleLoader from "react-spinners/CircleLoader";
+import ClipLoader from "react-spinners/ClipLoader";
 import PropTypes from "prop-types"
 import Header from "../components/header/header"
 import HeaderNoSidebar from "../components/header/headerNoSidebar"
@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   if (!dataLoaded) {
     return (
       <div className="active-dark-version main-wrapper text-center">
-        <CircleLoader />
+        <ClipLoader />
       </div>
     )
   }

@@ -13,7 +13,7 @@ import Contact from "../elements/contact/contact"
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Arlo Static Demo Dark" />
+      <SEO title="Ayesh Nipun" />
       <Banner />
       <About />
       <Service />
