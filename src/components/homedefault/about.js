@@ -71,7 +71,7 @@ const About = () => {
           value
         }
       }
-      file(relativePath: { eq: "images/banner/person-image-2.jpg" }) {
+      file(relativePath: { eq: "images/banner/person-image-4.jpg" }) {
         childImageSharp {
           fixed(quality: 100, width: 395, height: 470) {
             ...GatsbyImageSharpFixed
@@ -141,12 +141,17 @@ const About = () => {
                 )}
                 <div className="button-group mt--20">
                   {downloadButton && (
-                    <a className="rn-button" href="#downloadbutton">
+                    <a className="rn-button" href="https://drive.google.com/file/d/1WfaVD8-UhrmmCZKO_Zde1A_3SMSeVYxs/view?usp=sharing" target='blank'>
                       <span>{downloadButton}</span>
                     </a>
                   )}
                   {linkBUtton && (
-                    <a className="rn-button" href="#contact">
+                    <a className="rn-button" href="/" 
+                    onClick={e => {
+                      let contact = document.getElementById("contact")
+                      e.preventDefault() // Stop Page Reloading
+                      contact && contact.scrollIntoView({ behavior: "smooth" })
+                    }}>
                       <span>{linkBUtton}</span>
                     </a>
                   )}

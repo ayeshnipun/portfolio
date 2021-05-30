@@ -123,7 +123,7 @@ const Header = () => {
                 <li>
                   <a
                     className="nav-link menu-hover-link"
-                    href="/#news"
+                    href="/"
                     onClick={e => {
                       let news = document.getElementById("news")
                       e.preventDefault() // Stop Page Reloading
