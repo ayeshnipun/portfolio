@@ -8,7 +8,7 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
-  FaStackOverflow
+  FaStackOverflow,
 } from "react-icons/fa"
 
 // Start Header Area
@@ -60,42 +60,91 @@ const Header = () => {
                 offset={-200}
               >
                 <li>
-                  <a className="nav-link menu-hover-link" href="/#home">
+                  <a
+                    className="nav-link menu-hover-link"
+                    href="/"
+                    onClick={e => {
+                      let home = document.getElementById("home")
+                      e.preventDefault() // Stop Page Reloading
+                      home && home.scrollIntoView({ behavior: "smooth" })
+                    }}
+                  >
                     <span className="hover-item">
                       <span data-text="Home">Home</span>
                     </span>
                   </a>
                 </li>
                 <li>
-                  <a className="nav-link menu-hover-link" href="/#about">
+                  <a
+                    className="nav-link menu-hover-link"
+                    href="/"
+                    onClick={e => {
+                      let about = document.getElementById("about")
+                      e.preventDefault() // Stop Page Reloading
+                      about && about.scrollIntoView({ behavior: "smooth" })
+                    }}
+                  >
                     <span className="hover-item">
                       <span data-text="About">About</span>
                     </span>
                   </a>
                 </li>
                 <li>
-                  <a className="nav-link menu-hover-link" href="/#service">
+                  <a
+                    className="nav-link menu-hover-link"
+                    href="/"
+                    onClick={e => {
+                      let service = document.getElementById("service")
+                      e.preventDefault() // Stop Page Reloading
+                      service && service.scrollIntoView({ behavior: "smooth" })
+                    }}
+                  >
                     <span className="hover-item">
                       <span data-text="Services">Services</span>
                     </span>
                   </a>
                 </li>
                 <li>
-                  <a className="nav-link menu-hover-link" href="/#portfolio">
+                  <a
+                    className="nav-link menu-hover-link"
+                    href="/"
+                    onClick={e => {
+                      let portfolio = document.getElementById("portfolio")
+                      e.preventDefault() // Stop Page Reloading
+                      portfolio &&
+                        portfolio.scrollIntoView({ behavior: "smooth" })
+                    }}
+                  >
                     <span className="hover-item">
                       <span data-text="Portfolio">Portfolio</span>
                     </span>
                   </a>
                 </li>
                 <li>
-                  <a className="nav-link menu-hover-link" href="/#news">
+                  <a
+                    className="nav-link menu-hover-link"
+                    href="/#news"
+                    onClick={e => {
+                      let news = document.getElementById("news")
+                      e.preventDefault() // Stop Page Reloading
+                      news && news.scrollIntoView({ behavior: "smooth" })
+                    }}
+                  >
                     <span className="hover-item">
                       <span data-text="News">News</span>
                     </span>
                   </a>
                 </li>
                 <li>
-                  <a className="nav-link menu-hover-link" href="/#contact">
+                  <a
+                    className="nav-link menu-hover-link"
+                    href="/"
+                    onClick={e => {
+                      let contact = document.getElementById("contact")
+                      e.preventDefault() // Stop Page Reloading
+                      contact && contact.scrollIntoView({ behavior: "smooth" })
+                    }}
+                  >
                     <span className="hover-item">
                       <span data-text="Contact">Contact</span>
                     </span>
@@ -119,7 +168,10 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/ayeshnipun/" target="blank">
+                <a
+                  href="https://www.linkedin.com/in/ayeshnipun/"
+                  target="blank"
+                >
                   <FaLinkedinIn />
                 </a>
               </li>
@@ -129,7 +181,10 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a href="https://stackoverflow.com/users/11142587/ayesh-nipun" target="blank">
+                <a
+                  href="https://stackoverflow.com/users/11142587/ayesh-nipun"
+                  target="blank"
+                >
                   <FaStackOverflow />
                 </a>
               </li>
