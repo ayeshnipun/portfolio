@@ -71,8 +71,7 @@ const Contact = () => {
               ></h2>
               <p className="description mt--75 mt_sm--30 mt_md--30">
                 Please fill out the form on this section to contact with me. Or
-                call <br /> between 9:00 a.m. and 8:00 p.m. ET, Monday through
-                Friday
+                call <br /> anytime
               </p>
             </div>
           </div>
