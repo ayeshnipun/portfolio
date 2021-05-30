@@ -8,6 +8,7 @@
     "axios": "^0.20.0",
     "bootstrap": "^4.5.0",
     "disqus-react": "^1.0.10",
+    "emailjs-com": "^2.6.4",
     "fontello-cli": "^0.5.0",
     "gatsby": "^2.23.3",
     "gatsby-background-image": "^1.1.1",

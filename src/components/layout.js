@@ -17,8 +17,8 @@ const Layout = ({ children }) => {
 
   if (!dataLoaded) {
     return (
-      <div className="active-dark-version main-wrapper text-center">
-        <ClipLoader />
+      <div className="active-dark-version main-wrapper" style={{ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
+        <ClipLoader color="#f9004d"/>
       </div>
     )
   }

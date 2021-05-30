@@ -8,7 +8,7 @@ import { DiscussionEmbed } from 'disqus-react';
 
 const BlogDetails = ({data, pageContext}) => {
     const {
-        title , image, tags, category
+        title , image, tags
     } = data.markdownRemark.frontmatter;
     const imageSrc = image.childImageSharp;
     const {html} = data.markdownRemark;

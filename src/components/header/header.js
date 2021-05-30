@@ -39,9 +39,9 @@ const Header = () => {
         <div className="header-inner">
           {/* Header Logo  */}
           <div className="logo">
-            <Link to="/">
+            {/* <Link to="/">
               <Img fixed={arloLogo} />
-            </Link>
+            </Link> */}
           </div>
 
           <div className="mainmenu-inner">
