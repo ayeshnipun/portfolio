@@ -46,7 +46,7 @@ const BlogPost = () => {
               className="col-lg-4 col-md-6 col-12"
             >
               <Blog
-                //image={`https://cdn-images-1.medium.com/max/150/${blog.node.virtuals.previewImage.imageId}`}
+                image={blog.node.virtuals.previewImage.imageId}
                 title={blog.node.title}
                 date={blog.node.createdAt}
                 author={blog.node.author.name}

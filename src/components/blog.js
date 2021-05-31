@@ -10,7 +10,7 @@ const Blog = ({ title, date, author, path, image, excerpt, category }) => {
       <div className="post-thubnail">
         {image && (
           <Link to={postUrl} target='blank'>
-            <Image src={image} alt={title} />
+            <img  src={`https://cdn-images-1.medium.com/max/400/${image}`} />
           </Link>
         )}
       </div>
@@ -40,7 +40,7 @@ const Blog = ({ title, date, author, path, image, excerpt, category }) => {
 
         {excerpt && <p className="description">{excerpt}</p>}
         <div className="read-more">
-          <Link to={path} target="blank">
+          <Link to={postUrl} target="blank">
             <span>Read More...</span>
           </Link>
         </div>
