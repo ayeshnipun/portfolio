@@ -37,8 +37,8 @@ const Timeline = () => {
                 <Img className="envato-images" fixed={envatoImages} />
                 <span className="job">Full Stack Software Enginner</span>
                 <p>
-                  With 2 years experience as a Software Enginner, I
-                  have acquired the skills and knowledge necessary to make your
+                  With 2 years experience as a Software Enginner, I have
+                  acquired the skills and knowledge necessary to make your
                   project a success.
                 </p>
               </div>
@@ -56,9 +56,9 @@ const Timeline = () => {
                 <Img className="envato-images" fixed={envatoImages} />
                 <span className="job">Software Enginner - Trainee</span>
                 <p>
-                  With 20 years experience as a professional Web developer, I
-                  have acquired the skills and knowledge necessary to make your
-                  project a success.
+                  In this 6 months, I have gain knowledge on C#, ASP.NET Core,
+                  React JS, Microsoft Azure and Unit testing. And some experience 
+                  in project management with JIRA
                 </p>
               </div>
             </div>
