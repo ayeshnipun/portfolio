@@ -8,7 +8,7 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
-  FaStackOverflow,
+  FaStackOverflow, FaMediumM
 } from "react-icons/fa"
 
 // Start Header Area
@@ -131,7 +131,7 @@ const Header = () => {
                     }}
                   >
                     <span className="hover-item">
-                      <span data-text="News">News</span>
+                      <span data-text="Blogs">Blogs</span>
                     </span>
                   </a>
                 </li>
@@ -158,8 +158,8 @@ const Header = () => {
           <div className="header-bottom">
             <ul className="social-icons">
               <li>
-                <a href="https://www.facebook.com/Ayesh.Nipun/" target="blank">
-                  <FaFacebookF />
+                <a href="https://nipun-yesh.medium.com/" target="blank">
+                  <FaMediumM />
                 </a>
               </li>
               <li>

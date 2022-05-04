@@ -40,7 +40,7 @@ const infoList = [
     id: "4",
     icon: <FiCalendar />,
     label: "Age:",
-    link: "26",
+    link: "27",
   },
   {
     id: "4",
@@ -71,7 +71,7 @@ const About = () => {
           value
         }
       }
-      file(relativePath: { eq: "images/banner/person-image-4.jpg" }) {
+      file(relativePath: { eq: "images/banner/profile_image_x.png" }) {
         childImageSharp {
           fixed(quality: 100, width: 395, height: 470) {
             ...GatsbyImageSharpFixed
@@ -141,7 +141,7 @@ const About = () => {
                 )}
                 <div className="button-group mt--20">
                   {downloadButton && (
-                    <a className="rn-button" href="https://drive.google.com/file/d/1__wB5Wn8DZz66BfRTOR1qbUcSec8owDE/view?usp=sharing" target='blank'>
+                    <a className="rn-button" href="https://drive.google.com/file/d/179Zn0WGxEs4izni7ySBkLukcV426a0KS/view?usp=sharing" target='blank'>
                       <span>{downloadButton}</span>
                     </a>
                   )}

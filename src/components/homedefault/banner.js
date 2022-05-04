@@ -60,7 +60,8 @@ const Banner = () => {
                     <h4 className="subtitle">
                       I'm a
                       <TextLoop mask={true}>
-                        <span>Full-stack Software Engineer</span>
+                        <span>Senior Software Engineer</span>
+                        <span>Microsoft Certified Azure Developer</span>
                         <span>Gamer</span>
                         <span>Freelancer</span>
                         <span>Die-hard MARVEL fan</span>

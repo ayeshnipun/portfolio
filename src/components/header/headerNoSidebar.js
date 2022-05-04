@@ -141,7 +141,7 @@ const HeaderNoSidebar = () => {
                   onClick={onMenuToggleClick}
                 >
                   <span className="hover-item">
-                    <span data-text="News">News</span>
+                    <span data-text="Blogs">Blogs</span>
                   </span>
                 </a>
               </li>
