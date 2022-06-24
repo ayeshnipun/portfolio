@@ -149,7 +149,8 @@ const About = () => {
                     <a className="rn-button" href="/" 
                     onClick={e => {
                       let contact = document.getElementById("contact")
-                      e.preventDefault() // Stop Page Reloading
+                      // Stop Page Reloading
+                      e.preventDefault() 
                       contact && contact.scrollIntoView({ behavior: "smooth" })
                     }}>
                       <span>{linkBUtton}</span>
