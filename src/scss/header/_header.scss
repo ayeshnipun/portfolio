@@ -62,6 +62,7 @@
                             &.nav-link {
                                 text-decoration: none;
                                 color: #ffffff;
+                                text-align: center;
                                 text-transform: capitalize;
                                 display: block;
                                 position: relative;
@@ -98,7 +99,7 @@
         .social-icons {
             @extend %liststyle;
             left: 60px;
-            position: absolute;
+            // position: absolute;
             bottom: 60px;
 
             li {

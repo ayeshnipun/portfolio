@@ -72,7 +72,11 @@ const Banner = () => {
               </div>
             </div>
           </div>
+          <div className="row scroll-div">
+            <div id="scroll-down"></div>
+          </div>
         </div>
+
         <div className="black-bg-overlay"></div>
         <a className="angle-down-btn" herf="#">
           <i className="xcon-angle-double-down"></i>

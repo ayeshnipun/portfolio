@@ -4,7 +4,7 @@
 
 .banner-fixed-height {
     width: 100%;
-    height: 1050px;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,6 +21,20 @@
         padding: 100px 0;
         padding-top: 130px;
     }
+}
+
+.scroll-div{
+   
+    justify-content: center;
+}
+
+#scroll-down {
+    bottom: 0px;
+    height: 50px;
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 50px;
+    // position: absolute;
 }
 
 
