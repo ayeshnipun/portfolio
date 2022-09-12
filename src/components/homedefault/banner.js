@@ -29,11 +29,21 @@ const Banner = () => {
     }
   `)
 
+  const navigateToAbout = () => {
+    // var element = window.getElementById("about");
+    var element = document.querySelector('#about')
+    //you can do it by jquery. no matter
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
+  };
+
   const BannerImages =
     banenrQueryData.homedefaultJson.bgImage.childImageSharp.fluid
   const PortfolioImages = banenrQueryData.file.childImageSharp.fixed
   const Title = banenrQueryData.homedefaultJson.title
-  const SubTitle = banenrQueryData.homedefaultJson.subtitle
   return (
     <div className="rn-slider-area" id="home">
       {/* Start Single Slider  */}
@@ -72,9 +82,9 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="row scroll-div">
-            <div id="scroll-down"></div>
-          </div>
+          {/* <div className="row scroll-div">
+            <div onClick={navigateToAbout} id="scroll-down"></div>
+          </div> */}
         </div>
 
         <div className="black-bg-overlay"></div>

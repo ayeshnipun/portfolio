@@ -9,12 +9,14 @@ import Testimonial from "../components/homedefault/testimonial"
 import Timeline from "../components/homedefault/timeline"
 import BlogPost from "../components/blogPost"
 import Contact from "../elements/contact/contact"
+// import ScrollUp from "../components/scroll-up/scroll-up"
 
 const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Ayesh Nipun" />
       <Banner />
+      {/* <ScrollUp /> */}
       <About />
       <Service />
       <div id="portfolio">

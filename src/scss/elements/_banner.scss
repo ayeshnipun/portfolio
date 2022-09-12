@@ -3,99 +3,135 @@
 ---------------------------*/
 
 .banner-fixed-height {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &::before {
-        background-attachment: fixed !important;
-    }
-    @media #{$md-layout} {
-        height: auto;
-        padding: 100px 0;
-        padding-top: 130px;
-    }
-    @media #{$sm-layout} {
-        height: auto;
-        padding: 100px 0;
-        padding-top: 130px;
-    }
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::before {
+    background-attachment: fixed !important;
+  }
+  @media #{$md-layout} {
+    height: auto;
+    padding: 100px 0;
+    padding-top: 130px;
+  }
+  @media #{$sm-layout} {
+    height: auto;
+    padding: 100px 0;
+    padding-top: 130px;
+  }
 }
 
-.scroll-div{
-   
-    justify-content: center;
+.scroll-div {
+  margin-top: 100px;
+  justify-content: center;
 }
 
 #scroll-down {
-    bottom: 0px;
-    height: 50px;
-    width: 30px;
-    border: 2px solid white;
-    border-radius: 50px;
-    // position: absolute;
+  bottom: 0px;
+  height: 50px;
+  width: 30px;
+  border: 2px solid white;
+  border-radius: 50px;
+  // position: absolute;
 }
 
 
+#scroll-down::before {
+    position: absolute;
+    content: "";
+    border: 2px solid white;
+    height: 0.6em;
+    width: 0.6em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scrollDown 1s ease-in-out infinite;
+  }
+  
+  #scroll-down::after {
+    top: 30%;
+    /* transform: rotate(45deg); */
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes scrollDown {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(1.5em) rotate(45deg);
+      opacity: 0;
+    }
+  }
+
+  
 /*---------------------------
     Sldier Style One  
 ----------------------------*/
 .rn-slide {
-    &.slider-style-01 {
-        .inner {
-            position: relative;
-            z-index: 2;
-            .content {
-                .thumbnail {
-                    display: inline-block;
-                    border-radius: 100%;
-                    z-index: 2;
-                    position: relative;
-                    width: 200px;
-                    height: 200px;
-                    margin-bottom: 43px;
-                    &::after {
-                        position: absolute;
-                        content: "";
-                        top: -8px;
-                        bottom: -8px;
-                        left: -8px;
-                        right: -8px;
-                        border-radius: 100%;
-                        background-color: rgba(255,255,255,.08);
-                        z-index: -1;
-                    }
-                    .portfolio-images {
-                        display: block;
-                        border-radius: 100%;
-                    }
-                    
-                }
-               
-                .title {
-                    text-transform: uppercase;
-                    font-size: 45px;
-                    font-weight: 700;
-                    margin-bottom: 9px;
-                    color: #fff;
-                    line-height: 1.4;
-                    @media #{$sm-layout} {
-                        font-size: 30px;
-                    }
-                }
-                .subtitle {
-                    color: #fff;
-                    font-size: 19px;
-                    letter-spacing: 0px;
-                    margin-bottom: 0;
-                    font-weight: 500;
-                    div {
-                        padding-left: 4px;
-                    }
-                }
-            }
+  &.slider-style-01 {
+    .inner {
+      position: relative;
+      z-index: 2;
+      .content {
+        .thumbnail {
+          display: inline-block;
+          border-radius: 100%;
+          z-index: 2;
+          position: relative;
+          width: 200px;
+          height: 200px;
+          margin-bottom: 43px;
+          &::after {
+            position: absolute;
+            content: "";
+            top: -8px;
+            bottom: -8px;
+            left: -8px;
+            right: -8px;
+            border-radius: 100%;
+            background-color: rgba(255, 255, 255, 0.08);
+            z-index: -1;
+          }
+          .portfolio-images {
+            display: block;
+            border-radius: 100%;
+          }
         }
-    }
-}
 
+        .title {
+          text-transform: uppercase;
+          font-size: 45px;
+          font-weight: 700;
+          margin-bottom: 9px;
+          color: #fff;
+          line-height: 1.4;
+          @media #{$sm-layout} {
+            font-size: 30px;
+          }
+        }
+        .subtitle {
+          color: #fff;
+          font-size: 19px;
+          letter-spacing: 0px;
+          margin-bottom: 0;
+          font-weight: 500;
+          div {
+            padding-left: 4px;
+          }
+        }
+      }
+    }
+  }
+}
