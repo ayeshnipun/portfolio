@@ -79,6 +79,18 @@ const Service = () => {
                     <ProgressBar now={89} />
                     <span className="label">89%</span>
                   </div>
+                  
+                  <div className="single-progress">
+                    <h6 className="title">Docker</h6>
+                    <ProgressBar now={89} />
+                    <span className="label">65%</span>
+                  </div>
+                  
+                  <div className="single-progress">
+                    <h6 className="title">Kubernetes</h6>
+                    <ProgressBar now={89} />
+                    <span className="label">60%</span>
+                  </div>
 
                   <div className="single-progress">
                     <h6 className="title">Database Management</h6>

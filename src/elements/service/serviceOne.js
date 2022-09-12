@@ -24,9 +24,9 @@ const ServiceOne = props => {
         <div className={props.column} key={data.node.id}>
           <div className={`service ${props.serviceStyle}`}>
             <div className="inner">
-              <div className="number">
+              {/* <div className="number">
                 <span>{data.node.number}</span>
-              </div>
+              </div> */}
               <div className="content">
                 <h3 className="title">{data.node.title}</h3>
                 <p className="description">{data.node.description}</p>                
