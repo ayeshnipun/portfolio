@@ -141,7 +141,7 @@ const About = () => {
                 )}
                 <div className="button-group mt--20">
                   {downloadButton && (
-                    <a className="rn-button" href="https://drive.google.com/file/d/1VbgkuE4XToI7g1-PhC2fMugpnF51Yuie/view?usp=sharing" target='blank'>
+                    <a className="rn-button" href="https://drive.google.com/file/d/1L_0Anp-6-l7pGb0B-72NC7MRQVjgMqg0/view?usp=sharing" target='blank'>
                       <span>{downloadButton}</span>
                     </a>
                   )}
